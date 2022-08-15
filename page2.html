@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment</title>
+    <style>
+         .c2 {
+      background-color: rgb(214, 214, 230);
+      color: rgb(10, 1, 1);
+      border: 2px solid rgb(212, 201, 201);
+      border-radius: 10px;
+      margin: 10px;
+      padding: 5px;
+    }
+    .c3 {
+      background-color: rgb(214, 214, 230);
+      color: rgb(10, 1, 1);
+      border: 2px solid rgb(212, 201, 201);
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+    }
+    body {
+            margin: 100px;
+        }
+  
+        #textbox {
+            width: 40vw;
+            height: 5vh;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+  
+        button {
+            width: 70px;
+            height: 40px;
+            margin-top: 120px;
+            margin-left: 50px;
+            background-color: rgb(57, 8, 192);
+            color: white;
+            border-radius: 10px;
+            box-shadow: grey;
+            position: absolute;
+        }
+  
+        #sample {
+            width: 70vw;
+            margin: 50px;
+            background-color: rgb(168, 180, 168);
+            padding: 20px;
+            font-size: x-large;
+            position: absolute;
+            border-radius: 10px;
+        }
+  
+        h3 {
+            margin-left: 50px;
+            margin-top: 160px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p style="text-align: center ;">
+<span style="color: blue;font-size: 70px;">Payment</span> 
+    </p> <br> <br>
+    <p class="c2">
+        <span style="font-size: 25px;">Amount Payable</span> <br><span style="font-size: 50px; color: blue;"> Rs.1200</span>
+    </p>
+    <h4 style="color: blue;">
+        1. Copy Beneficiary UPI ID
+    </h4>
+    <div id="sample">
+        ranuise@ynl
+        <button onclick="copyText()">Copy</button>
+    </div>
+      
+    
+    <br><br><br><br><br><br><br><br>
+      
+    <h3>2. Enter Ref No.</h3><br />
+    <textarea id="textbox"></textarea>
+      
+    <script>
+        function copyText() {
+      
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                ("u@ybl");
+        }
+    </script>
+    <br><br>
+    <button style="background-color: blue;" type="button" onclick="alert('submitted Please wait for agent response!')">Submit</button>
+
+</body>
+</html>
